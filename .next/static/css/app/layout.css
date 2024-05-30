@@ -1,0 +1,63 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/css.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.css_cabecalho__YURxA{
+    display: flex;
+    height: auto;
+    background-color: rgb(213, 251, 0);
+}
+
+
+.css_cabecalho__YURxA img{
+    padding: 10px;
+}
+
+.css_cabecalho__YURxA a:link {
+    -webkit-text-decoration: aqua;
+            text-decoration: aqua;
+    color: black;
+    font-size: 25px;
+   }
+   
+.css_cabecalho__YURxA a:hover {
+    -webkit-text-decoration: white;
+            text-decoration: white;
+    color: rgb(123, 60, 39);
+   }
+   
+.css_pagina__kCeEO{
+    display: flex;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.css_cabecalhoMacarrao__47vmX{
+    display: flex;
+    height: auto;
+    background-color: rgb(241, 213, 142);
+    justify-content: center;
+    align-items: center
+}
+
+.css_cabecalhoMacarrao__47vmX a:link {
+    -webkit-text-decoration: aqua;
+            text-decoration: aqua;
+    color: black;
+    font-size: 25px;
+   }
+   
+   .css_cabecalhoMacarrao__47vmX a:hover {
+    -webkit-text-decoration: white;
+            text-decoration: white;
+    color: rgb(123, 60, 39);
+
+   }
+
+   .css_footer__XDxDf {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
