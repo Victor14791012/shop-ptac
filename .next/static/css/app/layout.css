@@ -1,9 +1,7 @@
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/css.module.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************************/
-/* css.module.css */
-
-/* Estilos para o cabeçalho */
+/*abaixo está o estilo do header*/
 .css_cabecalho__YURxA {
     background-color: #EBBA83;
     padding: 20px;
@@ -19,43 +17,43 @@
     color: rgb(123, 60, 39);
 }
 
-  /* Estilos para o logotipo */
+  
   .css_logo__JsLRU {
     padding-right: 10px;
     width: 50px;
     height: 50px;
   }
   
-  /* Estilos para a barra de navegação */
+
   .css_nav__PVcDG {
     display: flex;
     justify-content: space-between; /* Distribui os elementos horizontalmente */
     align-items: center;
   }
   
-  /* Estilos para os links na barra de navegação */
+ 
   .css_nav__PVcDG a {
-    margin-right: 20px; /* Espaçamento entre os ícones */
+    margin-right: 20px; 
   }
   
-  /* Estilos para o botão de adicionar produto e carrinho */
+
   .css_adicionarProduto___bHIH,
   .css_carrinho__2Q1N6 {
     display: flex;
     align-items: center;
   }
   
-  /* Estilos para a mensagem de marketing */
+  
   .css_mensagem__tTEIi {
-    text-align: center; /* Centraliza a mensagem */
-    margin-top: 20px; /* Espaçamento acima da mensagem */
+    text-align: center; 
+    margin-top: 20px; 
     font-size: 18px;
-    text-align: center; /* Centraliza a mensagem */
+    text-align: center; 
     flex-grow: 1; /* Permite que a mensagem ocupe o espaço restante */
     margin: 0;
   }
   
-  /* Estilos para o botão de adicionar produto */
+  
   .css_adicionarProduto___bHIH {
     background-color: #5dc95d;
     border: none;
@@ -68,11 +66,12 @@
     display: flex;
   }
   
-  /* Estilos para o botão de adicionar produto no hover */
+ 
   .css_adicionarProduto___bHIH:hover {
-    background-color: #28A428; /* Cor de fundo verde mais escura no hover */
+    background-color: #28A428; 
   }
-  
+  /*//////////// acima está o css do header////////////////*/
+
 
   /*//////////// abaixo está o css dos cards////////////////*/
   .css_main__2jQIh{
@@ -100,6 +99,8 @@
 
 /*//////////// acima está o css dos cards////////////////*/
 
+/*//////////// abaixo está o css do footer////////////////*/
+
 .css_footer__XDxDf {
     display: flex;
     justify-content: center;
@@ -118,7 +119,7 @@
   }
 
   .css_footer__XDxDf p{
-    
+    text-align: center;
     justify-content: center;
   }
  
@@ -128,3 +129,7 @@
     width: 100px;
     height: 100px;
   }
+
+/*//////////// acima está o css do footer////////////////*/
+
+

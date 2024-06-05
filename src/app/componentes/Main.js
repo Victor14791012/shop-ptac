@@ -12,12 +12,16 @@ export default async function Main(){
         {data.map((produto)=>
         <div key={produto.id} className={styles.card} >
         <p>{produto.title}</p>
+        <p>{produto.price}</p>
+       <p>{produto.description}</p>
+       <p>{produto.category}</p>
         <Image
         width={100}
         height={100}
         src={produto.image} />
-  
+        <p>{produto.count}</p>
         </div>
+        
         
         )}
       </main>

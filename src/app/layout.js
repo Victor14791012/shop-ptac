@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     
     <html lang="pt-br">
       <body className="">
-        
+      
         <Header/>
         <Home/>
         <Footer/>

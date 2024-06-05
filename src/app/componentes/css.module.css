@@ -1,6 +1,4 @@
-/* css.module.css */
-
-/* Estilos para o cabeçalho */
+/*abaixo está o estilo do header*/
 .cabecalho {
     background-color: #EBBA83;
     padding: 20px;
@@ -16,43 +14,43 @@
     color: rgb(123, 60, 39);
 }
 
-  /* Estilos para o logotipo */
+  
   .logo {
     padding-right: 10px;
     width: 50px;
     height: 50px;
   }
   
-  /* Estilos para a barra de navegação */
+
   .nav {
     display: flex;
     justify-content: space-between; /* Distribui os elementos horizontalmente */
     align-items: center;
   }
   
-  /* Estilos para os links na barra de navegação */
+ 
   .nav a {
-    margin-right: 20px; /* Espaçamento entre os ícones */
+    margin-right: 20px; 
   }
   
-  /* Estilos para o botão de adicionar produto e carrinho */
+
   .adicionarProduto,
   .carrinho {
     display: flex;
     align-items: center;
   }
   
-  /* Estilos para a mensagem de marketing */
+  
   .mensagem {
-    text-align: center; /* Centraliza a mensagem */
-    margin-top: 20px; /* Espaçamento acima da mensagem */
+    text-align: center; 
+    margin-top: 20px; 
     font-size: 18px;
-    text-align: center; /* Centraliza a mensagem */
+    text-align: center; 
     flex-grow: 1; /* Permite que a mensagem ocupe o espaço restante */
     margin: 0;
   }
   
-  /* Estilos para o botão de adicionar produto */
+  
   .adicionarProduto {
     background-color: #5dc95d;
     border: none;
@@ -65,11 +63,12 @@
     display: flex;
   }
   
-  /* Estilos para o botão de adicionar produto no hover */
+ 
   .adicionarProduto:hover {
-    background-color: #28A428; /* Cor de fundo verde mais escura no hover */
+    background-color: #28A428; 
   }
-  
+  /*//////////// acima está o css do header////////////////*/
+
 
   /*//////////// abaixo está o css dos cards////////////////*/
   .main{
@@ -97,6 +96,8 @@
 
 /*//////////// acima está o css dos cards////////////////*/
 
+/*//////////// abaixo está o css do footer////////////////*/
+
 .footer {
     display: flex;
     justify-content: center;
@@ -115,7 +116,7 @@
   }
 
   .footer p{
-    
+    text-align: center;
     justify-content: center;
   }
  
@@ -125,3 +126,6 @@
     width: 100px;
     height: 100px;
   }
+
+/*//////////// acima está o css do footer////////////////*/
+
