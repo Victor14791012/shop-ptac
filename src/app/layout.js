@@ -18,6 +18,8 @@ import Footer from "./componentes/Footer";
 import Main from "./componentes/Main";
 
 
+
+
 export const metadata = {
   title: 'Shop-Victor',
   description: 'E-comerce Vitão',
@@ -25,8 +27,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    
     <html lang="pt-br">
-      <body>
+      <body className="body">
         
         <Header/>
         <Main/>
