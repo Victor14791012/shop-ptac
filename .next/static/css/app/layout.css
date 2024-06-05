@@ -89,7 +89,7 @@
     flex-direction: column;
     padding: 1cm;
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 24px;
     background-color: #EBE2D2;
     justify-content: center;
@@ -130,6 +130,10 @@
     height: 100px;
   }
 
+ 
 /*//////////// acima está o css do footer////////////////*/
 
+.css_notFound__E5BLB{
+  text-align: center;
+}
 
