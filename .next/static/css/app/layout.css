@@ -105,6 +105,26 @@
     justify-content: center;
     align-items: center;
     background-color: #333333;
-    color:white
+    color:white;
+    width: auto;
+    height: 150px;
+    justify-content: space-between; 
     
+    
+  }
+
+  .css_footer__XDxDf a{
+    color: white;
+  }
+
+  .css_footer__XDxDf p{
+    
+    justify-content: center;
+  }
+ 
+ .css_logoFooter__zlXKr img{
+    justify-content: end;
+    padding-right: 10px;
+    width: 100px;
+    height: 100px;
   }

@@ -102,6 +102,26 @@
     justify-content: center;
     align-items: center;
     background-color: #333333;
-    color:white
+    color:white;
+    width: auto;
+    height: 150px;
+    justify-content: space-between; 
     
+    
+  }
+
+  .footer a{
+    color: white;
+  }
+
+  .footer p{
+    
+    justify-content: center;
+  }
+ 
+ .logoFooter img{
+    justify-content: end;
+    padding-right: 10px;
+    width: 100px;
+    height: 100px;
   }

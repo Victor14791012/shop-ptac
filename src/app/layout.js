@@ -15,7 +15,7 @@
 
 import Header from "./componentes/Header";
 import Footer from "./componentes/Footer";
-import Main from "./componentes/Main";
+import Home from "./page.js";
 
 
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className="">
         
         <Header/>
-        <Main/>
+        <Home/>
         <Footer/>
         
 
