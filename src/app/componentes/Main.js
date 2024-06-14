@@ -2,10 +2,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./css.module.css";
+import Spinner from "./Spinner";
 
 export default function Main() {
   const [products, setProducts] = useState([]);
   const [listProduct, setListProduct] = useState([]);
+
 
   useEffect(() => {
     const getProduct = async () => {
@@ -32,9 +34,14 @@ export default function Main() {
     const newList = [...listProduct].sort((a, b) => b.price - a.price);
     setListProduct(newList);
   };
+  
+  if(listProduct[0] == null){
+    return <Spinner/>
+  }
 
   return (
   
+    
         
       <main className={styles.main}>
         
