@@ -1,0 +1,96 @@
+/* header.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+/* Importação da fonte para o Fale Conosco */
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
+
+.cabecalho {
+  background-color: #EBBA83;
+  padding-inline: 10px;
+  height: auto;
+  position: relative; /* Define o cabeçalho como relativo para conter os elementos filhos posicionados absolutamente */
+}
+
+.nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuIcon {
+  cursor: pointer;
+}
+
+.logoTitle {
+  position: absolute; /* Posiciona absolutamente dentro do cabeçalho */
+ align-items: center;
+ justify-content: center;
+ left: 40%;
+ font-size: 45px;
+transform: translateY(-1%);
+ 
+
+  font-family: 'Marcellus', serif; /* Fonte similar à Louis Vuitton */
+}
+
+.fale_conosco {
+  font-family: 'Arial', sans-serif; /* Fonte Arial para o Fale Conosco */
+  font-size: 1.2em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons a {
+  position: relative;
+  margin-left: 20px;
+  color: inherit; /* Herdar cor do texto */
+  text-decoration: none;
+}
+
+.icons a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.icons a:hover {
+  color: white; /* Muda a cor dos ícones para branco */
+}
+
+.icons a:hover::after {
+  width: 100%; /* Aumenta a linha de largura 0 a 100% */
+}
+
+.categories {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.categories a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.categories a:hover {
+  background-color: #EBBA83;
+  color: white;
+}

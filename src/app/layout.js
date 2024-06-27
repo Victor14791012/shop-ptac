@@ -5,12 +5,13 @@ import Footer from "./componentes/Footer";
 
 
 export const metadata = {
-  title: 'Shop-Victor',
+  title: 'Victor Boss',
   description: 'E-commerce Vitão',
 }
 
 export default function RootLayout({ children }) {
   return (
+    
     <html lang="pt-br">
       <body>
         <Header />

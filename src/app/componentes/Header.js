@@ -1,35 +1,55 @@
-import Link from "next/link";
-import styles from "./css.module.css";
-import Image  from "next/image";
+"use client"; // Adiciona essa linha para indicar que o componente é do lado do cliente
 
-export default function Menu(){
-    return(
-        <header className={styles.cabecalho}>
-        <nav>
-         
-          <div className={styles.nav}>
-          <div className={styles.logo}>
-            <Image src="/images/logo.jpg" alt="Logo da Empresa" width={50} height={50} className={styles.logo} />
-          </div>
-            <Link href="/">
-              Home
-            </Link>
-            <Link href="/registro">
-              sei lá o que
-            </Link>
-            <Link href="/localizacao">
-            sei lá o que
-            </Link>
-            <p className={styles.mensagem}>A nossa empresa é a melhor, gaste seu dinheiro conosco!</p>
-            <div className={styles.carrinho}>
-              <Link href="/">
-                <Image src="/images/carrinho.png" alt="Carrinho" width={40} height={40} />
-              </Link>
-            </div>
-            <button className={styles.adicionarProduto}>Adicionar Produto</button>
-          </div>
-        </nav>
-       
-      </header>
-    )
+import Link from "next/link";
+import styles from "./header.module.css"; // Certifique-se de que o caminho para o arquivo CSS está correto
+import { useState } from "react";
+
+export default function Menu() {
+  const [showCategories, setShowCategories] = useState(false);
+
+  const toggleCategories = () => {
+    setShowCategories(!showCategories);
+  };
+
+  return (
+    <header className={styles.cabecalho}>
+
+      
+
+
+      <nav className={styles.nav}>
+
+      <div className={styles.logoTitle}>
+          <h1 className={styles.logoText}>vh-tech</h1>
+        </div>
+        
+        <div className={styles.menuIcon} onClick={toggleCategories}>
+          <i className="bi bi-list" style={{ fontSize: "2rem" }}></i>
+        </div>
+        
+        <div className={styles.icons}>
+          <Link href="#">
+            <p className={styles.fale_conosco}> Fale Conosco</p>
+          </Link>
+          <Link href="#">
+            <i className="bi bi-heart" style={{ fontSize: "2rem" }}></i>
+          </Link>
+          <Link href="#">
+            <i className="bi bi-bag" style={{ fontSize: "2rem" }}></i>
+          </Link>
+          <Link href="#">
+            <i className="bi bi-person" style={{ fontSize: "2rem" }}></i>
+          </Link>
+        </div>
+      </nav>
+      {showCategories && (
+        <div className={styles.categories}>
+          <Link href="#">Bolsas</Link>
+          <Link href="#">Sapatos</Link>
+          <Link href="#">TVs</Link>
+          <Link href="#">Eletrônicos</Link>
+        </div>
+      )}
+    </header>
+  );
 }

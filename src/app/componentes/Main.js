@@ -1,76 +1,105 @@
-"use client";  // Adiciona essa linha para indicar que o componente é do lado do cliente
+"use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "./css.module.css";
+import styles from "./main.module.css";
 import Spinner from "./Spinner";
+import ErrorGetData from './ErrorGetData';
 
 export default function Main() {
-  const [products, setProducts] = useState([]);
-  const [listProduct, setListProduct] = useState([]);
-
+  const [listProducts, setListProducts] = useState([]);
+  const [listComplete, setListComplete] = useState([]);
+  const [search, setSearch] = useState("");
+  const [errorFetch, setErrorFetch] = useState(false);
 
   useEffect(() => {
     const getProduct = async () => {
-      const response = await fetch("https://fakestoreapi.com/products/");
-      const data = await response.json();
-      setProducts(data);
-      setListProduct(data);
+      try {
+        const response = await fetch("https://fakestoreapi.com/products");  
+        const data = await response.json(); 
+        setListProducts(data);
+        setListComplete(data);
+      } catch {
+        setErrorFetch(true);
+      }
     };
-
     getProduct();
   }, []);
 
-  const orderAz = () => {
-    const newList = [...listProduct].sort((a, b) => a.title.localeCompare(b.title));
-    setListProduct(newList);
+  const orderAZ = () => {
+    const newList = [...listProducts].sort((a, b) => a.title.localeCompare(b.title));
+    setListProducts(newList);
   };
 
-  const orderP = () => {
-    const newList = [...listProduct].sort((a, b) => a.price - b.price);
-    setListProduct(newList);
+  const orderPriceMenor = () => {
+    const newList = [...listProducts].sort((a, b) => a.price - b.price);
+    setListProducts(newList);
   };
 
-  const orderPr = () => {
-    const newList = [...listProduct].sort((a, b) => b.price - a.price);
-    setListProduct(newList);
+  const orderPriceMaior = () => {
+    const newList = [...listProducts].sort((a, b) => b.price - a.price);
+    setListProducts(newList);
   };
-  
-  if(listProduct[0] == null){
-    return <Spinner/>
-  }
 
-  return (
-  
-    
-        
+  const searchText = (text) => {
+    setSearch(text);
+
+    if (text.trim() === "") {
+      setListProducts(listComplete);
+      return;
+    }
+
+    const newList = listComplete.filter((products) =>
+      products.title.toUpperCase().trim().includes(text.toUpperCase().trim())
+    );
+    setListProducts(newList);
+  };
+
+  if (listProducts.length === 0) {
+    if (errorFetch === true) {
+      return <ErrorGetData />;
+    } else {
+      return <Spinner />;
+    }
+  } else {
+    return (
       <main className={styles.main}>
-        
-     
-      <button onClick={orderAz}>Ordenar A-Z</button>
-      <button onClick={orderP}>Ordenar Preço Menor - Maior</button>
-      <button onClick={orderPr}>Ordenar Preço Maior - Menor</button> <br></br>
-    
-        
-      <div className={styles.main}>
-            
-              {listProduct.map((produto)=>
-              <div key={produto.id} className={styles.card} >
-              <p>{produto.title}</p>
-              <p>{produto.price}</p>
-             <p>{produto.description}</p>
-             <p>{produto.category}</p>
-              <Image
-              width={100}
-              height={100}
-              src={produto.image} />
-              <p>{produto.count}</p>
+        <div className={styles.searchContainer}>
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => searchText(e.target.value)}
+            placeholder="Pesquisar produtos..."
+            className={styles.searchInput}
+          />
+        </div>
+        <div className={styles.buttonContainer}>
+          <button onClick={orderAZ}>Ordenar A-Z</button>
+          <button onClick={orderPriceMenor}>Ordenar Preço Menor - Maior</button>
+          <button onClick={orderPriceMaior}>Ordenar Preço Maior - Menor</button>
+        </div>
+        <div className={styles.productsContainer}>
+          {listProducts.length === 0 ? (
+            <p className={styles.noResultsMessage}>Nenhum produto encontrado.</p>
+          ) : (
+            listProducts.map((produto) => (
+              <div key={produto.id} className={styles.productCard}>
+                <div className={styles.productImage}>
+                  <Image width={100} height={100} src={produto.image} alt={produto.title} />
+                </div>
+                <div className={styles.productInfo}>
+                  <p className={styles.productName}>{produto.title}</p>
+                  <p className={styles.productPrice}>${produto.price}</p>
+                  <p className={styles.productDescription}>{produto.description}</p>
+                  <p className={styles.productCategory}>{produto.category}</p>
+                  <div className={styles.productActions}>
+                    <button className={styles.addToCart}>Adicionar ao Carrinho</button>
+                  </div>
+                </div>
               </div>
-              
-              
-              )}
-              </div>
-            </main>
-         
-        );
-      }
-      
+            ))
+          )}
+        </div>
+      </main>
+    );
+  }
+}

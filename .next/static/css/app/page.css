@@ -1,146 +1,150 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/css.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
-/*abaixo está o estilo do header*/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/main.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
 
-/* styles/globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Main:wght@400;700&display=swap');
-
-
-.css_cabecalho__YURxA {
-   font-family: 'Main', sans-serif;
-
-    background-color: #EBBA83;
-    padding: 20px;
-  }
-
-  .css_cabecalho__YURxA a:link, .css_cabecalho__YURxA a:visited {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 20px;
-}
-  
-.css_cabecalho__YURxA a:hover {
-    color: rgb(123, 60, 39);
-}
-
-  
-  .css_logo__JsLRU {
-    padding-right: 10px;
-    width: 50px;
-    height: 50px;
-  }
-  
-
-  .css_nav__PVcDG {
+/*//////////// abaixo está o css dos cards////////////////*/
+.main_main__PbEbi {
     display: flex;
-    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    flex-direction: column;
     align-items: center;
+    padding: 1cm;
   }
   
- 
-  .css_nav__PVcDG a {
-    margin-right: 20px; 
-  }
-  
-
-  .css_adicionarProduto___bHIH,
-  .css_carrinho__2Q1N6 {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .css_mensagem__tTEIi {
-    text-align: center; 
-    margin-top: 20px; 
-    font-size: 18px;
-    text-align: center; 
-    flex-grow: 1; /* Permite que a mensagem ocupe o espaço restante */
-    margin: 0;
-  }
-  
-  
-  .css_adicionarProduto___bHIH {
-    background-color: #5dc95d;
-    border: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    justify-content: end;
-    display: flex;
-  }
-  
- 
-  .css_adicionarProduto___bHIH:hover {
-    background-color: #28A428; 
-  }
-  /*//////////// acima está o css do header////////////////*/
-
-
-  /*//////////// abaixo está o css dos cards////////////////*/
-  .css_main__2jQIh{
+  .main_productsContainer__g9tQC {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px; 
-    padding: 1cm;
-    
-}
-.css_card__lIYBe{
+    width: 100%;
+  }
+  
+  .main_productCard__1JYdr {
     display: flex;
     flex-direction: column;
-    padding: 1cm;
-    width: 30%;
-    height: auto;
-    border-radius: 24px;
-    background-color: #EBE2D2;
-    justify-content: center;
     align-items: center;
-   
-}
-
-/*//////////// acima está o css dos cards////////////////*/
-
-/*//////////// abaixo está o css do footer////////////////*/
-
-.css_footer__XDxDf {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #EBE2D2;
+    width: 30%;
+  }
+  
+  .main_productImage__nNB4A {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px ;
+  }
+  
+  .main_productImage__nNB4A img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .main_productInfo__Tx0Ha {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .main_productName__bIKLM {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .main_productDescription__7oYw3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .main_productPrice___oaSU {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .main_price__XDx_R {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .main_oldPrice___euBv {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .main_productActions__DZ8vD {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .main_addToCart___O4WI, .main_wishlist___bxhl {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .main_addToCart___O4WI {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .main_wishlist___bxhl {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  
+  /*//////////// acima está o css dos cards////////////////*/
+  
+  .main_notFound__c15IH {
+    text-align: center;
+  }
+  
+  .main_buttonContainer__4ucV1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .main_searchContainer__cHh_b {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #333333;
-    color:white;
-    width: auto;
-    height: 150px;
-    justify-content: space-between; 
-    
-    
+    width: 100%;
+    margin-bottom: 20px;
   }
-
-  .css_footer__XDxDf a{
-    color: white;
+  
+  .main_searchInput__RHLla {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
   }
+  
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/ErrorGetData.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/* ErrorGetData.module.css */
 
-  .css_footer__XDxDf p{
+.ErrorGetData_errorContainer__VCoOZ {
     text-align: center;
-    justify-content: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 20px;
   }
- 
- .css_logoFooter__zlXKr img{
-    justify-content: end;
-    padding-right: 10px;
-    width: 100px;
-    height: 100px;
-  }
-
- 
-/*//////////// acima está o css do footer////////////////*/
-
-.css_notFound__E5BLB{
-  text-align: center;
-}
-
+  
