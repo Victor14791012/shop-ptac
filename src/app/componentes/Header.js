@@ -20,7 +20,10 @@ export default function Menu() {
       <nav className={styles.nav}>
 
       <div className={styles.logoTitle}>
-          <h1 className={styles.logoText}>vh-tech</h1>
+      <h1 className={styles.logoText} style={{  textDecoration: "none", color: "inherit" }}>
+  <Link href="http://localhost:3000" style={{ textDecoration: "none", color: "inherit" }}>vh-tech</Link>
+</h1>
+
         </div>
         
         <div className={styles.menuIcon} onClick={toggleCategories}>

@@ -1,35 +1,35 @@
-// import Link from "next/Link";
 import styles from "./css.module.css";
-import Image  from "next/image";
 
-export default function Macarrao(){
-    return(
-        <footer className={styles.footer } >
-
-
-<ul class="social-list">
-            <li><a href="/">Facebook</a></li>
-            <li><a href="/">Instagram</a></li>
-            <li><a href="/">Twitter</a></li>
-            <li><a href="/">LinkedIn</a></li>
-        </ul>
-        
-<div class="content">
+export default function Macarrao() {
+  return (
+    <footer className={styles.footer}>
+      <ul className={styles.socialList}>
+        <li>
+          <a href="/" className="bi bi-facebook"></a>
+        </li>
+        <li>
+          <a href="/" className="bi bi-instagram"></a>
+        </li>
+        <li>
+          <a href="/" className="bi bi-twitter"></a>
+        </li>
+        <li>
+          <a href="/" className="bi bi-linkedin"></a>
+        </li>
+      </ul>
       
-        <p>A nossa empressa é a mehor gaste seu dinheiro aqui.</p>
-       
-        <p c>Desde 2007</p>
-    </div>
-    <div className={styles.logoFooter}>
-            <Image src="/images/logo.jpg" alt="Logo da Empresa" width={50} height={50} className={styles.logo} />
-          </div>
-
-                    
-
-    
-           
-    
-    
-        </footer>
-    )
+      <div className="content">
+        <p style={{ fontSize: "2rem" }}>
+          A nossa empresa é a melhor, gaste seu dinheiro aqui.
+        </p>
+        <p style={{ fontSize: "1.3rem" }}>Desde 2007</p>
+      </div>
+      
+      <div className={styles.logoFooter}>
+        <div className={styles.logoTitle}>
+          <h1 className={styles.logoText} style={{ padding: "2rem" }}>vh-tech</h1>
+        </div>
+      </div>
+    </footer>
+  );
 }

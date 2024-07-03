@@ -4,6 +4,8 @@ import Image from "next/image";
 import styles from "./main.module.css";
 import Spinner from "./Spinner";
 import ErrorGetData from './ErrorGetData';
+import Link from "next/link";
+
 
 export default function Main() {
   const [listProducts, setListProducts] = useState([]);
@@ -78,28 +80,27 @@ export default function Main() {
           <button onClick={orderPriceMaior}>Ordenar Preço Maior - Menor</button>
         </div>
         <div className={styles.productsContainer}>
-          {listProducts.length === 0 ? (
-            <p className={styles.noResultsMessage}>Nenhum produto encontrado.</p>
-          ) : (
-            listProducts.map((produto) => (
-              <div key={produto.id} className={styles.productCard}>
-                <div className={styles.productImage}>
-                  <Image width={100} height={100} src={produto.image} alt={produto.title} />
-                </div>
-                <div className={styles.productInfo}>
-                  <p className={styles.productName}>{produto.title}</p>
-                  <p className={styles.productPrice}>${produto.price}</p>
-                  <p className={styles.productDescription}>{produto.description}</p>
-                  <p className={styles.productCategory}>{produto.category}</p>
-                  <div className={styles.productActions}>
-                    <button className={styles.addToCart}>Adicionar ao Carrinho</button>
-                  </div>
+          {listProducts.map((produto) => (
+            <div key={produto.id} className={styles.productCard}>
+              <div className={styles.productImage}>
+                <Image width={100} height={100} src={produto.image} alt={produto.title} />
+              </div>
+              <div className={styles.productInfo}>
+                <p className={styles.productName}>{produto.title}</p>
+                <p className={styles.productPrice}>${produto.price}</p>
+                <p className={styles.productCategory}>{produto.category}</p>
+                <div className={styles.productActions}>
+                  <button className={styles.addToCart}>Adicionar ao Carrinho</button>
+                  <Link href={`/product/${produto.id}`}>
+                   <i class="bi bi-info-circle color-red" style={{ fontSize: "2rem" }} ></i> 
+                  </Link> 
                 </div>
               </div>
-            ))
-          )}
+            </div>
+          ))}
         </div>
       </main>
     );
+
   }
 }

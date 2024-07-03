@@ -1,138 +1,122 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/main.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
-
-/*//////////// abaixo está o css dos cards////////////////*/
 .main_main__PbEbi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1cm;
-  }
-  
-  .main_productsContainer__g9tQC {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px; 
-    width: 100%;
-  }
-  
-  .main_productCard__1JYdr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #EBE2D2;
-    width: 30%;
-  }
-  
-  .main_productImage__nNB4A {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 10px ;
-  }
-  
-  .main_productImage__nNB4A img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .main_productInfo__Tx0Ha {
-    padding: 20px;
-    width: 100%;
-  }
-  
-  .main_productName__bIKLM {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .main_productDescription__7oYw3 {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .main_productPrice___oaSU {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .main_price__XDx_R {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .main_oldPrice___euBv {
-    font-size: 18px;
-    color: #999;
-    text-decoration: line-through;
-  }
-  
-  .main_productActions__DZ8vD {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .main_addToCart___O4WI, .main_wishlist___bxhl {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .main_addToCart___O4WI {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .main_wishlist___bxhl {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #333;
-  }
-  
-  /*//////////// acima está o css dos cards////////////////*/
-  
-  .main_notFound__c15IH {
-    text-align: center;
-  }
-  
-  .main_buttonContainer__4ucV1 {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .main_searchContainer__cHh_b {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .main_searchInput__RHLla {
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1cm;
+}
+
+.main_productsContainer__g9tQC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+}
+
+.main_productCard__1JYdr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 220px;
+  height: 400px;
+  text-align: center;
+}
+
+.main_productCard__1JYdr:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.main_productImage__nNB4A {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.main_productImage__nNB4A img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_productInfo__Tx0Ha {
+  padding: 10px;
+  width: 100%;
+}
+
+.main_productName__bIKLM {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main_productPrice___oaSU {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.main_productCategory__Gjt7C {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.main_productActions__DZ8vD {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main_addToCart___O4WI {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main_infoIcon__fotJi {
+  color: #0070f3;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.main_buttonContainer__4ucV1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.main_searchContainer__cHh_b {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main_searchInput__RHLla {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/ErrorGetData.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/

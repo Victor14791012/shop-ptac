@@ -1,4 +1,3 @@
-// pages/404.js
 import Image from 'next/image';
 import styles from "./componentes/css.module.css";
 

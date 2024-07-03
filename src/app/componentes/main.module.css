@@ -1,132 +1,115 @@
-
-/*//////////// abaixo está o css dos cards////////////////*/
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1cm;
-  }
-  
-  .productsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px; 
-    width: 100%;
-  }
-  
-  .productCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #EBE2D2;
-    width: 30%;
-  }
-  
-  .productImage {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 10px ;
-  }
-  
-  .productImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .productInfo {
-    padding: 20px;
-    width: 100%;
-  }
-  
-  .productName {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .productDescription {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .productPrice {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .price {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .oldPrice {
-    font-size: 18px;
-    color: #999;
-    text-decoration: line-through;
-  }
-  
-  .productActions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .addToCart, .wishlist {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .addToCart {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .wishlist {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #333;
-  }
-  
-  /*//////////// acima está o css dos cards////////////////*/
-  
-  .notFound {
-    text-align: center;
-  }
-  
-  .buttonContainer {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .searchContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .searchInput {
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1cm;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 220px;
+  height: 400px;
+  text-align: center;
+}
+
+.productCard:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  padding: 10px;
+  width: 100%;
+}
+
+.productName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.productCategory {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.productActions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addToCart {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.infoIcon {
+  color: #0070f3;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
